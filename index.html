@@ -37,23 +37,25 @@ var r;
  r=Number(document.getElementById("b_znach").value);
  document.getElementById("b").innerHTML ="<h1>"+"Диаметр"+"<br>"+ r*2+"</h1>";
  }
-  function func3(){
-  var h;
-  h=Number(document.getElementById("c_znach").value);
-  var dist=Math.sqrt((6350+h)*(6350+h)-6350*6350);
-  document.getElementById("c").innerHTML ="<h1>"+"Расстояние"+"<br>"+dist+"</h1>";
-  }
  function func4(){
   var l;
   l=Number(document.getElementById("d_znach").value);
   document.getElementById("d").innerHTML= "<h1>"+"Площадь"+"<br>"+l*l+"</h1>";
   document.getElementById("d").innerHTML = document.getElementById("d").innerHTML+ "<h1>"+"Объём"+"<br>"+l*l*l+"</h1>";
  }
- 
+  function func5(){
+  var r; 
+  r=Number(document.getElementById("e_znach").value);
+   document.getElementById("e").innerHTML= "<h1>"+"Длина окружности"+"<br>"+Math.PI*2*r+"</h1>";
+   document.getElementById("e").innerHTML =document.getElementById("e").innerHTML+"<h1>"+"Площадь круга"+"<br>"+Math.PI*r*r+"</h1>";
+  }
+  function func6(){
+  z=Number(document.getElementById("f_znach").value);  
+    
  </script>
  </head>
  <body>
-  
+   
   <h1>Задача 1.25</h1>
   Сторона квадрата a=<input type="text" value="0" id="a_znach">
   <button onclick="func1()">1.25</button>
@@ -62,19 +64,37 @@ var r;
   <h1>Задача 1.26</h1>
   Радиус r=<input type="text" value="0" id="b_znach">
   <button onclick="func2()">1.26</button>
-  <div id="b"></div>
-  
- <h1>Задача 1.27</h1>
- Высота над землёй h=<input type="text" value="0" id="c_znach">
-  <button onclick="func3()">1.27</button>
-  <div id="c"></div>
+  <div id="b"></div> 
   
   <h1>Задача 1.28</h1>
   Ребро куба l=<input type="text" value="0" id="d_znach">
    <button onclick="func4()">1.28</button>
     <div id="d"></div>
   
-    </body> 
+    <h1>Задача 1.29</h1>
+    Радиус окружности r=<input type="text" value="0" id="e_znach">
+     <button onclick="func5()">1.29</button>
+     <div id="e"></div>
+     
+     <h1>Задача 1.30</h1>
+ Значение функции z=<input type="text" value="0" id="f_znach">
+ <button onclick="func6()">1.30</button>
+  <div id="f"></div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   </body> 
  </html>
   
  
