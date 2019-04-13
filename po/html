@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      
+      var i = 20;
+      while (i < 35) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + "<br> ";
+        i+1;
+      }
+    }
+
+    function func2() {
+      n = Number(document.getElementById("n_f2_znach").value);
+      var i = 10;
+      do {b=>10 
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + i*i + "<br> ";
+        i+1;
+      } while (i < b);
+    }
+
+    function func3() {
+      n = Number(document.getElementById("n_f3_znach").value);
+      var i;
+      for (i = 0; i < n; i++) {
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + i + " ";
+      }
+
+ function func4() {
+      n = Number(document.getElementById("n_f1_znach").value);
+      var i = 0;
+      while (i < n) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i + " ";
+        i++;
+      }
+    }
+    }
+  </script>
+</head>
+
+<body>
+
+
+  <h1>5.3 а</h1>
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.3 б</h1> n=
+  <input type="text" value="6" id="n_f2_znach">
+  <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.3 в </h1> n=
+  <input type="text" value="9" id="n_f3_znach">
+  <a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">♀</a>
+  <div id="otvet3"></div>
+<br>
+
+
+<h1>5.3 г </h1>
+
+
+ <html> 
+
+<head> 
+<link rel="stylesheet" href="style.css"> 
+<script> 
+function func1() { 
+document.getElementById("otvet1").innerHTML =""; 
+var a = Number(document.getElementById("a_f1_znach").value); 
+var b = Number(document.getElementById("b_f1_znach").value); 
+var sum=0; 
+while (a <= b) { 
+sum=sum+a; 
+document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + a + " " +sum +"<br>" ; 
+a++; 
+} 
+} 
+
+
+</script> 
+</head> 
+
+<body> 
+
+
+<h1>Цикл while!</h1> a= 
+<input type="text" value="1" id="a_f1_znach"> 
+</h1> b= 
+<input type="text" value="10" id="b_f1_znach"> 
+<a href="#" onclick="func4()" class="button red text-blanco text-shadow-negra">♥</a> 
+<div id="otvet1"></div> 
+<br> 
+
+<br> 
+<br> 
+<br> 
+</body> 
+</html>
+
+<br>
+
+  <br>
+  <br>
+  <br>
+</body>
+</html>
