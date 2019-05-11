@@ -1,0 +1,126 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+     var  a = Number(document.getElementById("a_f1_znach").value);
+          var  b = Number(document.getElementById("b_f1_znach").value);
+     
+      while (a <= b) {
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + a + "<br> ";
+        a++;
+      }
+    }
+    function func2(){
+           document.getElementById("otvet2").innerHTML = "";
+      var s =0;
+     var  a = Number(document.getElementById("a_f2_znach").value);
+          var  b = Number(document.getElementById("b_f2_znach").value);
+     
+      while (a <= b) {
+        s=s+a;
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + a+ " "+ s+ "<br> ";
+        a++;
+      }
+       }
+    function func3() {
+       document.getElementById("otvet3").innerHTML = "";
+      var s =1;
+     var  a = Number(document.getElementById("a_f3_znach").value);
+          var  b = Number(document.getElementById("b_f3_znach").value);
+     
+      while (a <= b) {
+        s=s*a;
+        document.getElementById("otvet3").innerHTML = document.getElementById("otvet3").innerHTML + a+ " "+ s+ "<br> ";
+        a++;
+       }
+    }
+     function func4(){
+       document.getElementById("otvet4").innerHTML = "";
+     var  a = Number(document.getElementById("a_f4_znach").value);
+          var  b = Number(document.getElementById("b_f4_znach").value);
+     var s =0;
+     var i = a;
+      while (i<= b) {
+          s=s+i;
+        document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML +i + " "+s +"<br> ";
+        i++;
+       }
+       document.getElementById("otvet4").innerHTML = document.getElementById("otvet4").innerHTML + " "+s/(b-a+1) +"<br> ";
+}
+       function func5(){
+       document.getElementById("otvet5").innerHTML = "";
+     var  a = Number(document.getElementById("a_f5_znach").value);
+          var  b = Number(document.getElementById("b_f5_znach").value);
+     var s =0;
+     var i = a;
+      while (i<= b) {
+          s=s+i*i;
+        document.getElementById("otvet5").innerHTML = document.getElementById("otvet5").innerHTML +i + " "+s +"<br> ";
+        i++; 
+       }
+       document.getElementById("otvet5").innerHTML = document.getElementById("otvet5").innerHTML + " "+"<br> ";
+
+    }
+  </script>
+</head>
+
+<body>
+
+
+  <h1>5.3г</h1> a=
+  <input type="text" value="4" id="a_f1_znach">
+  b=
+  <input type="text" value="24" id="b_f1_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">♥</a>
+  <div id="otvet1"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.27г</h1> a=
+  <input type="text" value="10" id="a_f2_znach">
+   b=
+  <input type="text" value="25" id="b_f2_znach">
+  <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.28г</h1> a=
+  <input type="text" value="9" id="a_f3_znach">
+  b=
+  <input type="text" value="11" id="b_f3_znach">
+  <a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">♀</a>
+  <div id="otvet3"></div>
+  <br>
+  <br>
+  <br>
+  <h1>5.29г</h1> a=
+  <input type="text" value="2" id="a_f4_znach">
+  b=
+  <input type="text" value="11" id="b_f4_znach">
+  <a href="#" onclick="func4()" class="button green text-blanco text-shadow-negra">♀</a>
+  <div id="otvet4"></div>
+<br>
+  <br>
+  <br>
+  <br>
+   <h1>5.30г</h1> a=
+  <input type="text" value="4" id="a_f5_znach">
+  b=
+  <input type="text" value="18" id="b_f5_znach">
+  <a href="#" onclick="func5()" class="button green text-blanco text-shadow-negra">♀</a>
+  <div id="otvet5"></div>
+<br>
+  <br>
+  <br>
+  <br>
+
+  
+  
+
+</body>
+</html>
