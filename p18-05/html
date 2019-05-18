@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+     document.getElementById("n_f1_znach");
+      var s = 0;
+      var a = 1
+       var b=Number(document.getElementById("n_f1_znach").value)
+         
+
+      while (a <= b) {
+       s=s+1/a 
+        document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + a + " " + s +<br>;
+        a++;
+      }
+    }
+
+    function func2() {
+     document.getElementById("otvet2").innerHTML =" ";
+      var s = 0;
+       var a = 2;
+      while (a<10) {
+        s=s+a/(a+1)
+        document.getElementById("otvet2").innerHTML = document.getElementById("otvet2").innerHTML + a + " " + s +<br>;
+        a++;
+      }
+    }
+
+    function func3() {
+      document.getElementById("otvet3").innerHTML =" ";
+      var s=0;
+       var a=1;
+    
+
+    }
+  </script>
+</head>
+
+<body>
+
+
+   <h1>5.32</h1> n=
+  <input type="text" value="1" id="n_f2_znach">
+  <a href="#" onclick="func2()" class="button green text-blanco text-shadow-negra">♀</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.33</h1> 
+  <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">♂</a>
+  <div id="otvet2"></div>
+<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.34</h1>
+  <a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">♀</a>
+  <div id="otvet3"></div>
+<br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>
